@@ -4,26 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>5 Tác Phẩm Trinh Thám Kinh Điển Nhất Của Agatha Christie</title>
+
+    <!-- Google Fonts: Playfair Display (Heading) & Be Vietnam Pro (Body) - Hỗ trợ Tiếng Việt 100% -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
     <!-- Animate.css -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Style CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Reading Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Header & Navigation -->
     <header class="animate__animated animate__fadeInDown">
       <div class="header-container">
-        <h1 class="logo">Agatha Christie Masterpieces</h1>
+        <a href="#about-author" class="logo">
+          <i class="fa-solid fa-feather-pointed logo-icon"></i>
+          <span>Agatha Christie</span>
+        </a>
         <nav>
           <ul class="nav-links">
-            <li><a href="#book1">And Then There Were None</a></li>
-            <li><a href="#book2">Orient Express</a></li>
-            <li><a href="#book3">Death on the Nile</a></li>
+            <li><a href="#about-author">Tác giả</a></li>
+            <li><a href="#book1">Và Rồi Chẳng Còn Ai</a></li>
+            <li><a href="#book2">Tàu Phương Đông</a></li>
+            <li><a href="#book3">Sông Nile</a></li>
             <li><a href="#book4">Roger Ackroyd</a></li>
-            <li><a href="#book5">ABC Murders</a></li>
+            <li><a href="#book5">Án Mạng A.B.C</a></li>
           </ul>
         </nav>
       </div>
@@ -33,15 +59,32 @@
       <!-- About Author (Hero Section) -->
       <section id="about-author" class="about-author" data-aos="fade-down">
         <div class="author-container">
-          <div class="author-image">
-            <img src="assets/img/Agatha-Christie.jpg" alt="Chân dung nhà văn Agatha Christie">
+          <div class="author-image-wrapper">
+            <div class="author-frame">
+              <img
+                src="assets/img/Agatha-Christie.jpg"
+                alt="Chân dung nhà văn Agatha Christie"
+              />
+            </div>
+            <div class="author-stamp">
+              <i class="fa-solid fa-stamp"></i> Queen of Mystery
+            </div>
           </div>
           <div class="author-content">
-            <span class="badge animate__animated animate__fadeIn">Nữ hoàng Truyện Trinh Thám</span>
-            <h1 class="animate__animated animate__fadeInLeft">Agatha Christie - Tác Giả Trinh Thám Bán Chạy Nhất Mọi Thời Đại</h1>
+            <span class="badge animate__animated animate__fadeIn">
+              <i class="fa-solid fa-crown"></i> Nữ hoàng Truyện Trinh Thám
+            </span>
+            <h1 class="animate__animated animate__fadeInLeft">
+              Agatha Christie - Tác Giả Trinh Thám Bán Chạy Nhất Mọi Thời Đại
+            </h1>
             <p class="author-bio">
-              Agatha Christie (1890 - 1976) là một nhà văn trinh thám người Anh, nổi tiếng thế giới khi sáng tạo ra hai nhân vật thám tử lừng danh là <strong>Hercule Poirot</strong> và <strong>Miss Marple</strong>. Bà được Sách Kỷ lục Guinness công nhận là tiểu thuyết gia bán chạy nhất mọi thời đại.
+              Agatha Christie (1890 - 1976) là đại văn hào trinh thám người Anh vĩ đại nhất lịch sử, 
+              người đã khắc họa nên hai tượng đài thám tử bất hủ: <strong>Hercule Poirot</strong> 
+              với những "tế bào xám" siêu việt và quý bà <strong>Miss Marple</strong> sắc sảo. 
+              Bà được Sách Kỷ lục Guinness tôn vinh là tiểu thuyết gia bán chạy nhất mọi thời đại 
+              với hàng tỷ ấn bản được đón đọc trên toàn cầu.
             </p>
+
             <div class="stats-container">
               <div class="stat-card">
                 <h3>66+</h3>
@@ -53,178 +96,271 @@
               </div>
               <div class="stat-card">
                 <h3>103+</h3>
-                <p>Ngôn ngữ dịch</p>
+                <p>Ngôn ngữ dịch thuật</p>
               </div>
             </div>
-            <a href="#book1" class="btn-primary">Khám phá 5 tác phẩm kinh điển</a>
+
+            <div class="cta-wrap">
+              <a href="#book1" class="btn-primary">
+                <span>Khám phá 5 tác phẩm kinh điển</span>
+                <i class="fa-solid fa-arrow-down-long"></i>
+              </a>
+            </div>
           </div>
         </div>
       </section>
+
       <!-- Book 1 -->
       <section id="book1" class="book-section">
-        <article class="book-card" data-aos="fade-up">
-          <div class="book-image">
-            <img
-              src="assets/img/VaRoiChangConAi.webp"
-              alt="And Then There Were None"
-            />
-          </div>
-          <div class="book-content">
-            <span class="tag">Kinh dị hình sự</span>
-            <h2>And Then There Were None (Mười Người Da Đen Nhỏ)</h2>
-            <p class="book-meta">
-              Năm xuất bản: 1939 | Nhân vật chính: Mười người xa lạ
-            </p>
-            <p class="book-summary">
-              Mười người hoàn toàn xa lạ được mời tới một hòn đảo bí ẩn. Từng
-              người một lần lượt bị sát hại theo một bài đồng dao kỳ ám ảnh. Ai
-              là hung thủ khi không có ai khác trên đảo?
-            </p>
-            <button class="btn-cta">Xem chi tiết</button>
-          </div>
-        </article>
+        <div class="section-container">
+          <article class="book-card" data-aos="fade-up">
+            <div class="book-image">
+              <div class="book-cover-mockup">
+                <img
+                  src="assets/img/VaRoiChangConAi.webp"
+                  alt="And Then There Were None"
+                />
+              </div>
+            </div>
+            <div class="book-content">
+              <span class="tag"><i class="fa-solid fa-skull"></i> Kinh dị tâm lý - Bí ẩn</span>
+              <h2>And Then There Were None (Và Rồi Chẳng Còn Ai)</h2>
+              <div class="book-meta">
+                <span class="meta-item"><i class="fa-regular fa-calendar"></i> <strong>Năm:</strong> 1939</span>
+                <span class="meta-item"><i class="fa-solid fa-user-secret"></i> <strong>Nhân vật:</strong> 10 nạn nhân bí ẩn</span>
+              </div>
+              <p class="book-summary">
+                Mười con người mang trong mình những bí mật tội lỗi trong quá khứ bất ngờ nhận được lời mời đến một hòn đảo biệt lập. 
+                Từng người một lần lượt bỏ mạng theo những câu thơ rùng rợn của bài đồng dao thiếu nhi treo trên tường. 
+                Ai là hung thủ khi không một bóng người thứ mười một tồn tại trên đảo?
+              </p>
+              <button class="btn-cta">
+                <span>Xem chi tiết tác phẩm</span>
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </article>
+        </div>
       </section>
 
       <!-- Book 2 -->
       <section id="book2" class="book-section bg-alt">
-        <article class="book-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="book-image">
-            <img
-              src="assets/img/VuAnTrenChuyenTauTocPhuongDong.webp"
-              alt="Murder on the Orient Express"
-            />
-          </div>
-          <div class="book-content">
-            <span class="tag">Trinh thám phá án</span>
-            <h2>
-              Murder on the Orient Express (Án Mạng Trên Chuyến Tàu Tốc Hành
-              Phương Đông)
-            </h2>
-            <p class="book-meta">
-              Năm xuất bản: 1934 | Nhân vật chính: Hercule Poirot
-            </p>
-            <p class="book-summary">
-              Một vụ án mạng xảy ra trên chuyến tàu tốc hành sang trọng giữa đêm
-              bão tuyết. Nạn nhân bị đâm mười hai nhát dao. Tất cả hành khách
-              trong toa đều là nghi phạm, và thám tử tài ba Hercule Poirot phải
-              tìm ra sự thật.
-            </p>
-            <button class="btn-cta">Xem chi tiết</button>
-          </div>
-        </article>
+        <div class="section-container">
+          <article class="book-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="book-image">
+              <div class="book-cover-mockup">
+                <img
+                  src="assets/img/VuAnTrenChuyenTauTocPhuongDong.webp"
+                  alt="Murder on the Orient Express"
+                />
+              </div>
+            </div>
+            <div class="book-content">
+              <span class="tag"><i class="fa-solid fa-train"></i> Trinh thám suy luận cổ điển</span>
+              <h2>Murder on the Orient Express (Án Mạng Trên Chuyến Tàu Tốc Hành Phương Đông)</h2>
+              <div class="book-meta">
+                <span class="meta-item"><i class="fa-regular fa-calendar"></i> <strong>Năm:</strong> 1934</span>
+                <span class="meta-item"><i class="fa-solid fa-magnifying-glass"></i> <strong>Thám tử:</strong> Hercule Poirot</span>
+              </div>
+              <p class="book-summary">
+                Giữa đêm bão tuyết dữ dội cắt đứt mọi liên lạc, một vụ sát hại dã man xảy ra ngay trên chuyến tàu hỏa sang trọng bậc nhất châu Âu. 
+                Nạn nhân bị đâm liên tiếp mười hai nhát dao chí mạng. Mọi hành khách đều có bằng chứng ngoại phạm hoàn hảo, 
+                buộc thám tử Poirot phải kích hoạt mọi tế bào xám để giải bài toán hóc búa nhất sự nghiệp.
+              </p>
+              <button class="btn-cta">
+                <span>Xem chi tiết tác phẩm</span>
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </article>
+        </div>
       </section>
 
       <!-- Book 3 -->
       <section id="book3" class="book-section">
-        <article class="book-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="book-image">
-            <img
-              src="assets/img/Death_on_the_Nile.webp""
-              alt="Death on the Nile"
-            />
-          </div>
-          <div class="book-content">
-            <span class="tag">Trinh thám phá án</span>
-            <h2>Death on the Nile (Án Mạng Trên Sông Nile)</h2>
-            <p class="book-meta">
-              Năm xuất bản: 1937 | Nhân vật chính: Hercule Poirot
-            </p>
-            <p class="book-summary">
-              Một chuyến đi trăng mật lãng mạn trên dòng sông Nile thơ mộng biến
-              thành thảm kịch khi nữ thừa kế trẻ tuổi xinh đẹp bị bắn chết.
-              Hercule Poirot vô tình có mặt và bắt tay vào điều tra những mối
-              quan hệ chồng chéo trên con tàu.
-            </p>
-            <button class="btn-cta">Xem chi tiết</button>
-          </div>
-        </article>
+        <div class="section-container">
+          <article class="book-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="book-image">
+              <div class="book-cover-mockup">
+                <img
+                  src="assets/img/Death_on_the_Nile.webp"
+                  alt="Death on the Nile"
+                />
+              </div>
+            </div>
+            <div class="book-content">
+              <span class="tag"><i class="fa-solid fa-ship"></i> Tình cảm - Án mạng kịch tính</span>
+              <h2>Death on the Nile (Án Mạng Trên Sông Nile)</h2>
+              <div class="book-meta">
+                <span class="meta-item"><i class="fa-regular fa-calendar"></i> <strong>Năm:</strong> 1937</span>
+                <span class="meta-item"><i class="fa-solid fa-magnifying-glass"></i> <strong>Thám tử:</strong> Hercule Poirot</span>
+              </div>
+              <p class="book-summary">
+                Chuyến du ngoạn trăng mật xa hoa trên dòng sông Nile huyền bí bỗng biến thành cơn ác mộng đẫm máu 
+                khi cô tiểu thư thừa kế trẻ trung, giàu có bị bắn chết ngay trong phòng ngủ. 
+                Ghen tuông, lòng tham và thù hận đan xen giữa những hành khách tưởng chừng vô can trên con tàu hơi nước Karnak.
+              </p>
+              <button class="btn-cta">
+                <span>Xem chi tiết tác phẩm</span>
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </article>
+        </div>
       </section>
 
       <!-- Book 4 -->
       <section id="book4" class="book-section bg-alt">
-        <article class="book-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="book-image">
-            <img
-              src="assets/img/Roger_Ackroyd.webp"
-              alt="The Murder of Roger Ackroyd"
-            />
-          </div>
-          <div class="book-content">
-            <span class="tag">Bí ẩn giật gân</span>
-            <h2>The Murder of Roger Ackroyd (Vụ Án Mạng Của Roger Ackroyd)</h2>
-            <p class="book-meta">
-              Năm xuất bản: 1926 | Nhân vật chính: Hercule Poirot, Tiến sĩ
-              Sheppard
-            </p>
-            <p class="book-summary">
-              Roger Ackroyd bị sát hại sau khi nhận được một lá thư tiết lộ kẻ
-              tống tiền người phụ nữ ông yêu. Cuốn tiểu thuyết nổi tiếng với một
-              trong những cú plot twist gây kinh ngạc và gây tranh cãi nhất lịch
-              sử văn học trinh thám.
-            </p>
-            <button class="btn-cta">Xem chi tiết</button>
-          </div>
-        </article>
+        <div class="section-container">
+          <article class="book-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="book-image">
+              <div class="book-cover-mockup">
+                <img
+                  src="assets/img/Roger_Ackroyd.webp"
+                  alt="The Murder of Roger Ackroyd"
+                />
+              </div>
+            </div>
+            <div class="book-content">
+              <span class="tag"><i class="fa-solid fa-mask"></i> Plot Twist huyền thoại</span>
+              <h2>The Murder of Roger Ackroyd (Vụ Án Mạng Của Roger Ackroyd)</h2>
+              <div class="book-meta">
+                <span class="meta-item"><i class="fa-regular fa-calendar"></i> <strong>Năm:</strong> 1926</span>
+                <span class="meta-item"><i class="fa-solid fa-user-doctor"></i> <strong>Nhân vật:</strong> Poirot & BS. Sheppard</span>
+              </div>
+              <p class="book-summary">
+                Nhà quý tộc Roger Ackroyd bị sát hại dã man ngay tại thư phòng sau khi nhận được bức thư mật 
+                vạch trần kẻ tống tiền người tình quá cố của ông. Tác phẩm đi vào lịch sử văn học thế giới 
+                như một cuộc cách mạng trong nghệ thuật kể chuyện trinh thám với cú ngoặt bất ngờ khiến độc giả bàng hoàng.
+              </p>
+              <button class="btn-cta">
+                <span>Xem chi tiết tác phẩm</span>
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </article>
+        </div>
       </section>
 
       <!-- Book 5 -->
       <section id="book5" class="book-section">
-        <article class="book-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="book-image">
-            <img
-              src="assets/img/A_B_C.webp"
-              alt="The ABC Murders"
-            />
-          </div>
-          <div class="book-content">
-            <span class="tag">Kẻ giết người hàng loạt</span>
-            <h2>The ABC Murders (Chuỗi Án Mạng A.B.C)</h2>
-            <p class="book-meta">
-              Năm xuất bản: 1936 | Nhân vật chính: Hercule Poirot, Arthur
-              Hastings
-            </p>
-            <p class="book-summary">
-              Một kẻ giết người hàng loạt gửi thư thách thức Hercule Poirot
-              trước mỗi vụ án. Nạn nhân được chọn theo thứ tự bảng chữ cái, và
-              luôn có một cuốn cẩm nang tàu hỏa ABC bên cạnh thi thể.
-            </p>
-            <button class="btn-cta">Xem chi tiết</button>
-          </div>
-        </article>
+        <div class="section-container">
+          <article class="book-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="book-image">
+              <div class="book-cover-mockup">
+                <img
+                  src="assets/img/A_B_C.webp"
+                  alt="The ABC Murders"
+                />
+              </div>
+            </div>
+            <div class="book-content">
+              <span class="tag"><i class="fa-solid fa-fingerprint"></i> Sát nhân hàng loạt</span>
+              <h2>The ABC Murders (Chuỗi Án Mạng A.B.C)</h2>
+              <div class="book-meta">
+                <span class="meta-item"><i class="fa-regular fa-calendar"></i> <strong>Năm:</strong> 1936</span>
+                <span class="meta-item"><i class="fa-solid fa-magnifying-glass"></i> <strong>Thám tử:</strong> Poirot & Hastings</span>
+              </div>
+              <p class="book-summary">
+                Một tên sát nhân ngạo mạn liên tục gửi thư khiêu chiến thám tử Poirot trước khi ra tay. 
+                Hắn chọn nạn nhân và địa điểm theo thứ tự chữ cái trong bảng Alphabet: Alice Ascher tại Andover, 
+                Betty Barnard tại Bexhill... Cạnh mỗi thi thể luôn là cuốn cẩm nang hướng dẫn đường sắt A.B.C mở sẵn.
+              </p>
+              <button class="btn-cta">
+                <span>Xem chi tiết tác phẩm</span>
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </article>
+        </div>
       </section>
     </main>
 
+    <!-- Footer -->
     <footer class="site-footer">
       <div class="footer-content">
-        <div class="social-links">
-          <a href="#">Facebook</a>
-          <a href="#">Twitter</a>
-          <a href="#">Instagram</a>
+        <div class="footer-brand">
+          <h3>Agatha Christie Masterpieces</h3>
+          <p>Trang web tôn vinh di sản trinh thám của "Nữ hoàng Truyện Trinh Thám"</p>
         </div>
-        <p>
-          &copy; 2026 Agatha Christie Masterpieces. Sinh viên thực hiện: Lê
-          Hoàng Kim Duyên (526000174).
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Goodreads"><i class="fa-brands fa-goodreads-g"></i></a>
+        </div>
+        <div class="footer-divider"></div>
+        <p class="copyright">
+          &copy; 2026 Agatha Christie Masterpieces. Bài tập thiết kế Web.
+        </p>
+        <p class="student-info">
+          Sinh viên thực hiện: <strong>Lê Hoàng Kim Duyên</strong> &bull; MSSV: <strong>526000174</strong>
         </p>
       </div>
     </footer>
 
+    <!-- Back to top button -->
+    <button id="back-to-top" title="Lên đầu trang" aria-label="Lên đầu trang">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+      // Khởi tạo thư viện AOS
       AOS.init({
-        duration: 1000,
+        duration: 800,
         once: true,
+        offset: 80,
       });
 
       // Cuộn mượt (Smooth scrolling)
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-          document.querySelector(this.getAttribute("href")).scrollIntoView({
-            behavior: "smooth",
-          });
+          const targetId = this.getAttribute("href");
+          if (targetId && targetId !== "#") {
+            const targetEl = document.querySelector(targetId);
+            if (targetEl) {
+              e.preventDefault();
+              targetEl.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+              });
+            }
+          }
         });
       });
+
+      // Back to top & Reading Progress Bar
+      const backToTopBtn = document.getElementById("back-to-top");
+      const progressBar = document.getElementById("scroll-progress");
+
+      window.addEventListener("scroll", () => {
+        const scrollTop = window.scrollY || document.documentElement.scrollTop;
+        const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const progress = (scrollTop / scrollHeight) * 100;
+        
+        if (progressBar) {
+          progressBar.style.width = progress + "%";
+        }
+
+        if (backToTopBtn) {
+          if (scrollTop > 400) {
+            backToTopBtn.classList.add("visible");
+          } else {
+            backToTopBtn.classList.remove("visible");
+          }
+        }
+      });
+
+      if (backToTopBtn) {
+        backToTopBtn.addEventListener("click", () => {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+        });
+      }
     </script>
   </body>
 </html>
