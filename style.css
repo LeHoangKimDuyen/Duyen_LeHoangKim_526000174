@@ -1,0 +1,362 @@
+/* KỸ THUẬT CSS & CSS VARIABLES */
+:root {
+  --primary-color: #1a252f; /* Màu xanh đen cổ điển */
+  --accent-color: #c0392b; /* Màu đỏ trinh thám */
+  --bg-color: #f4f6f7; /* Màu nền xám nhẹ */
+  --card-bg: #ffffff; /* Màu nền thẻ trắng */
+  --text-color: #2c3e50; /* Màu chữ chính */
+  --text-muted: #7f8c8d; /* Màu chữ phụ */
+  --font-heading: "Georgia", serif;
+  --font-body: "Roboto", sans-serif;
+  --spacing-base: 16px;
+  --border-radius: 8px;
+}
+
+/* RESET CƠ BẢN */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* HEADER & NAV */
+header {
+  background-color: var(--primary-color);
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: calc(var(--spacing-base) * 1.5) var(--spacing-base);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: calc(var(--spacing-base) * 1.5);
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+}
+
+.nav-links a:hover {
+  color: var(--accent-color);
+}
+
+/* MAIN CONTENT */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ABOUT AUTHOR HERO SECTION */
+.about-author {
+  padding: calc(var(--spacing-base) * 4) var(--spacing-base);
+  background: linear-gradient(135deg, var(--card-bg) 0%, var(--bg-color) 100%);
+}
+
+.author-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: calc(var(--spacing-base) * 3);
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.author-image img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.author-content .badge {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-bottom: var(--spacing-base);
+  font-weight: bold;
+}
+
+.author-content h1 {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-base);
+  line-height: 1.2;
+}
+
+.author-bio {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  margin-bottom: calc(var(--spacing-base) * 2);
+}
+
+.stats-container {
+  display: flex;
+  gap: var(--spacing-base);
+  margin-bottom: calc(var(--spacing-base) * 2);
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  flex: 1;
+  min-width: 100px;
+  background-color: var(--card-bg);
+  padding: var(--spacing-base);
+  border-radius: var(--border-radius);
+  text-align: center;
+  border: 2px solid transparent;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: scale(1.05);
+  border-color: var(--accent-color);
+}
+
+.stat-card h3 {
+  font-family: var(--font-heading);
+  color: var(--accent-color);
+  font-size: 1.8rem;
+  margin-bottom: 4px;
+}
+
+.stat-card p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.btn-primary {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: #fff;
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 15px rgba(192, 57, 43, 0.4);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(192, 57, 43, 0.6);
+}
+
+/* BOOK SECTION & CARD */
+.book-section {
+  padding: calc(var(--spacing-base) * 4) var(--spacing-base);
+}
+
+.book-section.bg-alt {
+  background-color: #e9ecef;
+}
+
+.book-card {
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: calc(var(--spacing-base) * 2);
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* TẠO LƯỚI ĐẢO NGƯỢC CHO CÁC PHẦN CHẴN ĐỂ ĐẸP HƠN */
+.book-section.bg-alt .book-card {
+  grid-template-columns: 1fr 1fr;
+  direction: rtl;
+}
+
+.book-section.bg-alt .book-content {
+  direction: ltr;
+}
+
+.book-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-height: 500px;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.book-card:hover .book-image img {
+  transform: scale(1.05);
+}
+
+.book-content {
+  padding: calc(var(--spacing-base) * 2);
+}
+
+.tag {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin-bottom: var(--spacing-base);
+  font-weight: bold;
+}
+
+.book-content h2 {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  margin-bottom: calc(var(--spacing-base) / 2);
+  color: var(--primary-color);
+}
+
+.book-meta {
+  font-style: italic;
+  color: var(--text-muted);
+  margin-bottom: var(--spacing-base);
+  font-size: 0.95rem;
+}
+
+.book-summary {
+  margin-bottom: calc(var(--spacing-base) * 2);
+  font-size: 1.1rem;
+}
+
+/* BUTTON */
+.btn-cta {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+  font-weight: bold;
+  font-family: var(--font-body);
+}
+
+.btn-cta:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
+/* FOOTER */
+.site-footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  padding: calc(var(--spacing-base) * 2) var(--spacing-base);
+  margin-top: calc(var(--spacing-base) * 4);
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.social-links {
+  margin-bottom: var(--spacing-base);
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--accent-color);
+}
+
+.site-footer p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    gap: var(--spacing-base);
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .author-container {
+    grid-template-columns: 1fr;
+  }
+
+  .author-content h1 {
+    font-size: 2rem;
+  }
+
+  .book-card,
+  .book-section.bg-alt .book-card {
+    grid-template-columns: 1fr;
+    direction: ltr;
+  }
+
+  .book-image img {
+    max-height: 300px;
+  }
+
+  .book-content h2 {
+    font-size: 1.8rem;
+  }
+}
